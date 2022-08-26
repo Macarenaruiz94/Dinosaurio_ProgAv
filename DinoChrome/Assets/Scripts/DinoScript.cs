@@ -11,8 +11,6 @@ public class DinoScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
@@ -24,5 +22,13 @@ public class DinoScript : MonoBehaviour
     private void Jump()
     {
         rb.AddForce(new Vector2(0, jump), ForceMode2D.Impulse);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.CompareTag("Enemy"))
+        {
+            SendMessageUpwards("Resetear");
+        }
     }
 }
