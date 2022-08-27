@@ -537,7 +537,7 @@ MonoBehaviour:
   SpotUp: {fileID: 701277359}
   TimeSpawnDown: 2
   SpawnRateDown: 4
-  TimeSpawnUp: 4
+  TimeSpawnUp: 3
   SpawnRateUp: 5
 --- !u!4 &1920049717
 Transform:
