@@ -19,11 +19,6 @@ public class SpawnManagement : MonoBehaviour
         InvokeRepeating("SpawnEnemiesUp", TimeSpawnUp, SpawnRateUp);
     }
 
-    void Update()
-    {
-        
-    }
-
     private void SpawnEnemiesDown()
     {
         Vector3 spawnPos = new Vector3(0, 0, 0);
