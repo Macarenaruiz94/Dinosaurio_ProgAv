@@ -536,9 +536,9 @@ MonoBehaviour:
   SpotDown: {fileID: 1783940152}
   SpotUp: {fileID: 701277359}
   TimeSpawnDown: 2
-  SpawnRateDown: 4
-  TimeSpawnUp: 3
-  SpawnRateUp: 5
+  SpawnRateDown: 3
+  TimeSpawnUp: 4
+  SpawnRateUp: 3
 --- !u!4 &1920049717
 Transform:
   m_ObjectHideFlags: 0
